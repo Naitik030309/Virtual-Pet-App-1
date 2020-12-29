@@ -41,6 +41,15 @@ function draw() {
     text("Food is finished.",150,475);
   }
 
+  if(foodS === undefined){
+    strokeWeight(2);
+    stroke("black");
+    fill("red");
+    textSize(24);
+    text("Loading............",150,465);
+    text("Server is starting in a few moment.",85,490);
+  }
+
   drawSprites();
   strokeWeight(2);
   stroke("black");
